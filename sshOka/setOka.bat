@@ -8,6 +8,10 @@ set "fileToDelete=C:\Git\etc\ssh\ssh_config"
 set "sourceFile=ssh_config"
 set "destinationFile=C:\Git\etc\ssh"
 
+rem Usuario e email definido
+set "usernameProfile=okavango81"
+set "userEmailProfile=eguilhermeleitedev81@gmail.com"
+
 
 rem Deleta o arquivo no destino se existir
 if exist "%fileToDelete%" (
@@ -17,7 +21,7 @@ if exist "%fileToDelete%" (
 rem Copia o arquivo de origem para o destino
 copy "%sourceFile%" "%destinationFile%"
 
-echo Credenciais definidas e arquivo alterado com sucesso.
+echo Credenciais definidas para "%usernameProfile%" 
 
 timeout /nobreak /t 5 > nul
 exit
